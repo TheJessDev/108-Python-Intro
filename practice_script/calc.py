@@ -4,7 +4,7 @@
 
 
 # functions
-def print_menu():
+def print_menu(): 
     separator= "------------"
     print(separator)
     print("Calc 3000")
@@ -39,10 +39,13 @@ elif opt == "3":
 # if the second number is zero, show an error
 # else divide and show the result
 
-
+# This is as close as I could get without the terminal crashing. I still can't get the error msg to appear or the result :)
+elif opt == "4":   
+    if opt == "4" and num2 == "0":
+        print("Second number cannot be 0, Please select another number: ")
+    
 elif opt == "4":
-    result = num1 / num2
-    print("The result is: " + str(result))
-
-if opt == "0":
-    print("Error: Please choose another number: ")
+    if opt == "4" and num2 >= "1":
+        result = num1 // num2
+        print("The result is: " + str(result))
+    
